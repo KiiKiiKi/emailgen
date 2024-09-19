@@ -1,11 +1,7 @@
 import streamlit as st
-import subprocess
 import json
 import time
-
-# Function to run the hunter_info script
-def run_hunter_info():
-    subprocess.run(['python', 'hunter_info.py'], check=True)
+from hunter_info import save_account_info  # Import the function from hunter_info.py
 
 # Read account info from JSON file
 def read_account_info():
@@ -14,8 +10,8 @@ def read_account_info():
 
 # Function to refresh the usage values dynamically
 def refresh_usage_values():
-    run_hunter_info()
-    account_info = read_account_info()
+    save_account_info()  # Directly call the function to get account info
+    account_info = read_account_info()  # Read the updated account info
     return account_info.get('used_searches', 'N/A'), account_info.get('used_verifications', 'N/A')
 
 # Create the Streamlit interface
@@ -101,23 +97,23 @@ header_placeholder = st.empty()
 st.markdown('<div class="container">', unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 with col1:
-    st.markdown('<div class="section-header">linkedin contact extraction</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">LinkedIn Contact Extraction</div>', unsafe_allow_html=True)
     if st.button('Run Email Generator'):
         with st.spinner('Running Email Generator...'):
-            result = subprocess.run(['python', 'email_generator.py'], capture_output=True, text=True)
-        st.write(result.stdout)
+            result = run_email_generator()  # Call the email generator directly
+        st.write(result)
         st.success('Email Generator completed!')
 
     if st.button('Run Email Verifier'):
         with st.spinner('Running Email Verifier...'):
-            result = subprocess.run(['python', 'email_verifier.py'], capture_output=True, text=True)
-        st.write(result.stdout)
+            result = run_email_verifier()  # Call the email verifier directly
+        st.write(result)
         st.success('Email Verifier completed!')
 
     st.markdown('<a href="https://docs.google.com/spreadsheets/d/1pNhTLbKGcbmpvCIs6upg3f9RxpOlH1XfKc4bpDDhnFA/edit?usp=sharing"> Link to Contact Creation Sheet</a>', unsafe_allow_html=True)
 
 with col2:
-    st.markdown('<div class="section-header">hunter.io features</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Hunter.io Features</div>', unsafe_allow_html=True)
     st.markdown('<a href="https://hunter.io/search" target="_blank"><button class="stButton">Domain Search</button></a>', unsafe_allow_html=True)
     st.markdown('<a href="https://hunter.io/verify" target="_blank"><button class="stButton">Bulk Email Verification</button></a>', unsafe_allow_html=True)
 
@@ -127,7 +123,7 @@ st.markdown('</div>', unsafe_allow_html=True)
 st.markdown("""
 <div class="full-width">
     <div class="footer">
-        any questions? <a href="https://ambiguous-pleasure-22d.notion.site/Creating-new-contacts-for-QED-Send-Outs-c887c5e75b7441e4ba879697bc5d2a8a?pvs=4" class="link">click here for the full documentation</a>
+        Any questions? <a href="https://ambiguous-pleasure-22d.notion.site/Creating-new-contacts-for-QED-Send-Outs-c887c5e75b7441e4ba879697bc5d2a8a?pvs=4" class="link">Click here for the full documentation</a>
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -136,17 +132,9 @@ st.markdown("""
 while True:
     used_searches, used_verifications = refresh_usage_values()
     header_placeholder.markdown(f"""
-    <div class="full-width">
-        <div class="container">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-                <div class="title">Email Generator</div>
-                <div class="stats">
-                    Domain Searches Used: <span class="number">{used_searches}</span><br>
-                    Verifications Used: <span class="number">{used_verifications}</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Your HTML code for displaying the stats -->
+    Domain Searches Used: {used_searches}<br>
+    Verifications Used: {used_verifications}
     """, unsafe_allow_html=True)
     time.sleep(30)
 
