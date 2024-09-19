@@ -2,6 +2,8 @@ import streamlit as st
 import json
 import time
 from hunter_info import save_account_info  # Import the function from hunter_info.py
+from email_generator import run_email_generator  # Import your email generator
+from email_verifier import run_email_verifier  # Import your email verifier
 
 # Read account info from JSON file
 def read_account_info():
@@ -137,5 +139,6 @@ while True:
     Verifications Used: {used_verifications}
     """, unsafe_allow_html=True)
     time.sleep(30)
+
 
 
