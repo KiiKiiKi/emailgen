@@ -1,11 +1,12 @@
+import streamlit as st
 import requests
 import json
 
-# Your Hunter.io API key
-API_KEY = '25d680dbe254702fa465beeffbbf41b09f3cecee'
-
 # Function to get account information from Hunter.io
 def get_hunter_account_info():
+    # Retrieve the API key within the function, not globally
+    API_KEY = st.secrets["hunter"]["api_key"]
+    
     url = "https://api.hunter.io/v2/account"
     params = {'api_key': API_KEY}
     response = requests.get(url, params=params)
@@ -24,8 +25,5 @@ def save_account_info():
             'used_verifications': account_info['requests']['verifications']['used']
         }, f)
 
-# If you want to run this as a standalone script:
-if __name__ == "__main__":
-    save_account_info()
 
 
