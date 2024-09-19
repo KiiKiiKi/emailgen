@@ -1,0 +1,271 @@
+first_name,last_name,company,email,match_status
+Rajeev,Gupta,Bank of New York Mellon - Alcentra,rajeev.gupta@BNYMellon.com,Match!
+Alex,Rutter,Tradeweb,alex.rutter@tradeweb.com,Match!
+Andy,Jackson,Goldman Sachs,andy.jackson@ny.email.gs.com,Match!
+Braydon,Heape,Financial Conduct Authority,braydon.heape@fcagrp.com,Match!
+Fatima,Haris,BNY Mellon,fatima.haris@bny.com,Match!
+David,Iniesta,Bank of America,david.iniesta@bankofamerica.com,Match!
+Tom,Lodder,Allen & Overy,tom.lodder@AllenOvery.com,Match!
+Chad,Giussani,Freelance,chad.giussani@freelancer.com,Match!
+Laura,Stoddart,UBS,laura.stoddart@businesssolutions.es,Match!
+John,Wilson,Standard Chartered Bank,john.wilson@sc.com,Match!
+Alexandria,Carr,Societe Generale,"alexandria.carr@ey.com
+",Match!
+Tim,Arnold,Crédit Agricole Corporate and Investment Bank,tim.arnold@ca-cib.com,Match!
+Robin,Owen,Consultant,r.owen@dr2consultants.eu,Match!
+Darren,Lazarus,HSBC,darren.lazarus@hsbcib.com,Match!
+Sam,Silva,UBS,sam.silva@businesssolutions.es,Match!
+Oma,Christopher,Bank of America Merrill Lynch,oma.christopher@baml.com,Match!
+Sam,Baldam,Bank of America,sam.baldam@bankofamerica.com,Match!
+Sam,Baldam,Bank of America,sam.baldam@bankofamerica.com,Match!
+Oma,Christopher,Bank of America Merrill Lynch,oma.christopher@baml.com,Match!
+Preeti,O’Brien,Morgan Stanley,preeti.o’brien@morganstanley.com,Match!
+Zara,Scheuringer,Goldman Sachs,zara.scheuringer@ny.email.gs.com,Match!
+Alice,Zaremba,Deloitte,"alice.zaremba@deloitte,com",Match!
+Emily,Ballisat,Simmons & Simmons,emily.ballisat@Simmons-Simmons.com,Match!
+Itziar,Palazuelos,S&P Global,itziar_palazuelos@standardandpoors.com,Match!
+Angélina,Li,State Street Global Advisors · Full-time,li_angélina@ssga.com,Match!
+Jean-Philippe,Bouton,RBC Capital Markets,jean-philippe.bouton@smbc-cm.com,Match!
+Valeria,Lucentini,Goldman Sachs,valeria.lucentini@ny.email.gs.com,Match!
+Ijeoma,Davis,Citadel,ijeoma.davis@parkwell.co.uk,Match!
+George,Sotiropoulos,Bank of England,george.sotiropoulos@bankofengland.co.uk,Match!
+Michael,Parker,EY,michael.parker@uk.Ey.com,Match!
+Fariha,Haseen,Morgan Stanley,fariha.haseen@morganstanley.com,Match!
+Alex,Leung,Goldman Sachs,alex.leung@ny.email.gs.com,Match!
+Jennifer,Sutton,HSBC,jennifer.sutton@hsbcib.com,Match!
+Trish,Cooper,Deloitte,"trish.cooper@deloitte,com",Match!
+Arshian,Ali,UBS,arshian.ali@businesssolutions.es,Match!
+Emma,Abrahams,Barclays,emma.abrahams@barclays.com ,Match!
+Mark,Frith,HSBC,mark.frith@hsbcib.com,Match!
+Caroline,Stratton,DWS Group,caroline.stratton@dws.com,Match!
+Shengpu,Chen,Goldman Sachs,shengpu.chen@ny.email.gs.com,Match!
+Luke,Taylor,Goldman Sachs,luke.taylor@ny.email.gs.com,Match!
+Louise,Prebble,Vanguard,louise.prebble@vanguard.co.uk,Match!
+Magdalena,Bajson,Aegon Asset Management,magdalena.bajson@apg.nl,Match!
+Katie,Carter,Jupiter Asset Management,katie.carter@jupiteram.com,Match!
+Megan,Delar,JPMorgan Chase & Co.,megan.delar@jpmorganchase.com,Match!
+Sara,Centofanti,Bank of England,sara.centofanti@bankofengland.co.uk,Match!
+Alexis,Tobin,KPMG,tobin.alexis@kpmg.nl,Match!
+Dzhuneyt,Yusein,J.P. Morgan,dzhuneyt.yusein@jpmorgan.com,Match!
+Colum,Miskelly,Deloitte,"colum.miskelly@deloitte,com",Match!
+Jennifer,Essery,Goldman Sachs,jennifer.essery@ny.email.gs.com,Match!
+Alex,Lee,EY,alex.lee@uk.Ey.com,Match!
+Raymond,Beckley,JPMorgan Chase & Co.,raymond.beckley@jpmorganchase.com,Match!
+Richard,Astwick,Citadel,richard.astwick@parkwell.co.uk,Match!
+Apurva,Owalekar,Societe Generale,"apurva.owalekar@ey.com
+",Match!
+Amaan-Eddin,Khan,Morgan Stanley,amaan-eddin.khan@morganstanley.com,Match!
+Amy,Ramsay,Morgan Stanley,amy.ramsay@morganstanley.com,Match!
+Russell,Burke,Bank of America Merrill Lynch,russell.burke@baml.com,Match!
+Nikhil,Joshi,Bank of America Merrill Lynch,nikhil.joshi@baml.com,Match!
+Susan,Akwongo,Standard Chartered Bank,susan.akwongo@sc.com,Match!
+Devonne,Strysick,Investment Banking,devonne.strysick@carnegie.se ,Match!
+Anneliese,Dodds,House of Commons,anneliese.dodds@parliament.uk,Match!
+Rayhan,Oddud,J.P. Morgan,rayhan.oddud@jpmorgan.com,Match!
+John,Kersten,Commerzbank AG,john.kersten@commerzbank.com,Match!
+Elisa,Menardo,Credit Suisse,elisa.menardo@credit-suisse.com ,Match!
+Kay,Swinburne,UK House of Lords,kayswinburne@doctors.org.uk,Match!
+Marius,Floca,TP ICAP,marius.floca@tpicap.com,Match!
+Julia,Excell,ING,julia.excell@ing.lu,Match!
+Caitlin,McErlane,Baker McKenzie,caitlin.mcerlane@bakermckenzie.com,Match!
+Jayson,Probin,Financial Conduct Authority,jayson.probin@fcagrp.com,Match!
+Yvonne,Harte,UK Finance,yvonne.harte@ukfinance.org.uk,Match!
+Ektoras,Tsamis,Bank of China,ektoras.tsamis@bankofchina.com,Match!
+Harry,Eddis,Linklaters,harry.eddis@sacglobalinvestors.com,Match!
+Sudeep,Chatterjee,LSEG (London Stock Exchange Group),sudeepchatterjee@londonstockexchange.com,Match!
+Scott,Charity,Berenberg,scott.charity@berenberg.de,Match!
+Arturo,Argote,Standard Chartered Bank · Full-time,arturo.argote@sc.com,Match!
+Leon,Stapley,Bank of America,leon.stapley@bankofamerica.com,Match!
+Rex,Alphonse,LSEG (London Stock Exchange Group),rexalphonse@londonstockexchange.com,Match!
+Eren,Erman,TP ICAP,eren.erman@tpicap.com,Match!
+Peter,Fine,HSBC,peter.fine@hsbcib.com,Match!
+James,Moloney-Quinn,Bank of America,james.moloney-quinn@bankofamerica.com,Match!
+Sarah,Collishaw,Goldman Sachs,sarah.collishaw@ny.email.gs.com,Match!
+Maurizio,Garro,Lloyds Banking Group,maurizio.garro@lloydsbankinggroup.com,Match!
+Rollo,Burgess,Deloitte,"rollo.burgess@deloitte,com",Match!
+Jeremy,Davis,LSEG (London Stock Exchange Group),jeremydavis@londonstockexchange.com,Match!
+Leyla,Kayumova,Investec,leyla.kayumova@investec.ec,Match!
+Kamal,Virk,Barclays,kamal.virk@barclays.com ,Match!
+Anoop,Vayalil,BNP Paribas,anoop.vayalil@uk.bnpparibas.com,Match!
+Paul,Rose,UBS,paul.rose@businesssolutions.es,Match!
+Yana,Papst,Clifford Chance,yana.papst@cliffordchance.com,Match!
+Dineshbabu,Sekar,EY,dineshbabu.sekar@uk.Ey.com,Match!
+Thomas,Hagen,Societe Generale,"thomas.hagen@ey.com
+",Match!
+Christopher,Cooper,IG,christopher.cooper@ig.com,Match!
+Ashish,Saini,UBS,ashish.saini@businesssolutions.es,Match!
+Aqsa,Naz,Federated Hermes Limited,aqsa.naz@FederatedHermes.com,Match!
+Martin,Angliss,ING,martin.angliss@ing.lu,Match!
+Jeremy,Clivaz,"Birkbeck, University of London",j.clivaz@bbk.ac.uk,Match!
+Greg,Norris,Credit Suisse,greg.norris@credit-suisse.com ,Match!
+Calvin,Taylor,bp,calvin.taylor@de.bp.com,Match!
+Saima,Choudhury,PwC,saima.choudhury@pwc.nl,Match!
+Anna,Thompson,IHS Markit,"anna.thompson@markit.com
+",Match!
+Gianluca,Casali,Lloyds Banking Group,gianluca.casali@lloydsbankinggroup.com,Match!
+Richard,Holdsworth,HSBC,richard.holdsworth@hsbcib.com,Match!
+Simon,Place,UBS,simon.place@businesssolutions.es,Match!
+Rashmeet,Panesar,ING,rashmeet.panesar@ing.lu,Match!
+Anita,Vijayakar,Bank of America,anita.vijayakar@bankofamerica.com,Match!
+Jonathan,Ladds,Standard Chartered Bank,jonathan.ladds@sc.com,Match!
+Robert,Cook,JPMorgan Chase & Co.,robert.cook@jpmorganchase.com,Match!
+Richard,Newman,Bank of Ireland,richard.newman@bankofengland.co.uk,Match!
+Melania,Wicks,HSBC,melania.wicks@hsbcib.com,Match!
+James,McKenzie,UBS,james.mckenzie@businesssolutions.es,Match!
+Kanika,Chopra,Man Group,kanika.chopra@man.com ,Match!
+Nameeta,Dev,Deutsche Bank,nameeta.dev@plusmarketsgroup.com,Match!
+Chris,Lepingwell,EY,chris.lepingwell@uk.Ey.com,Match!
+David,Negus,Investec,david.negus@investec.ec,Match!
+Marek,Juscikowski,BlackRock,marek.juscikowski@blackrock.com,Match!
+Steven,Hotson,Lloyds Banking Group,steven.hotson@lloydsbankinggroup.com,Match!
+Himesh,Patel,BNY Mellon,himesh.patel@bny.com,Match!
+Steve,Wood,J.P. Morgan,steve.wood@jpmorgan.com,Match!
+Jim,Whitehead,S&P Global,jim_whitehead@standardandpoors.com,Match!
+Jack,Smith,Deutsche Bank AG,jack.smith@plusmarketsgroup.com,Match!
+Prasoon,Chaturvedi,Financial Conduct Authority,prasoon.chaturvedi@fcagrp.com,Match!
+Rahima,Begum,Morgan Stanley,rahima.begum@morganstanley.com,Match!
+Anne,Reaney,Persefoni,anne.reaney@personio.de,Match!
+Lu,Fu,Mizuho,lu.fu@mizuhogroup.com,Match!
+Geoffrey,Sekyere-Afriyie,SmartestEnergy,geoffrey.sekyere-afriyie@smartenergygb.org,Match!
+Charlotte,Hopkins,Barclays,charlotte.hopkins@barclays.com ,Match!
+Martyn,Dwight,Transact,martyn.dwight@transatel.com,Match!
+Mustafa,Kanchwala,Deloitte,"mustafa.kanchwala@deloitte,com",Match!
+Stephen,Long,JP Morgan,stephen.long@jpmorgan.com,Match!
+Rajan,Shah,Deutsche Bank,rajan.shah@plusmarketsgroup.com,Match!
+Tejal,Morjaria,Segantii Capital Management,t.morjaria@wintoncapital.com,Match!
+Inês,Martins,LSEG (London Stock Exchange Group),inêsmartins@londonstockexchange.com,Match!
+Joanna,Jenkins,Binance,joanna.jenkins@binance.com,Match!
+James,Buer,Societe Generale,"james.buer@ey.com
+",Match!
+Kiran,Patel,Shell,kiran.patel@shell.com,Match!
+Nasir,Butt,4C Associates,nasir.butt@kbassociates.ie,Match!
+James,Capewell,Bank of America,james.capewell@bankofamerica.com,Match!
+Chafik,Choukri,BNP Paribas,chafik.choukri@uk.bnpparibas.com,Match!
+Agnes,Swoboda,UBS,agnes.swoboda@businesssolutions.es,Match!
+Alex,Amey,Morgan Stanley,alex.amey@morganstanley.com,Match!
+Paul,Rose,UBS,paul.rose@businesssolutions.es,Match!
+Adam,Butt,J.P. Morgan,adam.butt@jpmorgan.com,Match!
+Richard,Guerin,Investment bank,richard.guerin@nib.int,Match!
+Santosh,Balachandran,SG Kleinwort Hambros,santosh.balachandran@kleinworthambros.co.uk,Match!
+Thomas,Hagen,Societe Generale,"thomas.hagen@ey.com
+",Match!
+Sveva,Sfara,BNY Mellon,sveva.sfara@bny.com,Match!
+Tracy,Kimberley,Standard Chartered Bank,tracy.kimberley@sc.com,Match!
+Cyril,Courtel,Bank of Ireland,cyril.courtel@bankofengland.co.uk,Match!
+Sav,Patel,Deutsche Bank,sav.patel@plusmarketsgroup.com,Match!
+Calvin,Taylor,bp,calvin.taylor@de.bp.com,Match!
+Greg,Norris,Credit Suisse,greg.norris@credit-suisse.com ,Match!
+Matthew,Roy,UniCredit,matthew.roy@unicreditgroup.eu,Match!
+Melania,Wicks,HSBC,melania.wicks@hsbcib.com,Match!
+Joy,Dedeku,Deloitte,"joy.dedeku@deloitte,com",Match!
+Louis,Josiah,HSBC,louis.josiah@hsbcib.com,Match!
+Emma,Harling,JPMorgan Chase & Co.,emma.harling@jpmorganchase.com,Match!
+Shelley,Patel,UBS,shelley.patel@businesssolutions.es,Match!
+Alexandra,Bradstock,Deutsche Bank,alexandra.bradstock@plusmarketsgroup.com,Match!
+Kirstie,Boardwell,Financial Conduct Authority,kirstie.boardwell@fcagrp.com,Match!
+Lee,McGouran,Morgan Stanley,lee.mcgouran@morganstanley.com,Match!
+Pius,Achuama,HSBC,pius.achuama@hsbcib.com,Match!
+Alexis,Delmar,HSBC,alexis.delmar@hsbcib.com,Match!
+Jason,Lofthouse,EDF Trading,jason.lofthouse@edftrading.com,Match!
+Nick,Day,HSBC,nick.day@hsbcib.com,Match!
+Lee,McGouran,Morgan Stanley,lee.mcgouran@morganstanley.com,Match!
+Ira,Hughes,LSEG (London Stock Exchange Group),irahughes@londonstockexchange.com,Match!
+Nameeta,Dev,Deutsche Bank,nameeta.dev@plusmarketsgroup.com,Match!
+Luthfa,Hussain,Credit Suisse,luthfa.hussain@credit-suisse.com ,Match!
+Alex,Harvey,Mizuho,alex.harvey@mizuhogroup.com,Match!
+Andrei,Radu,Bank of England,andrei.radu@bankofengland.co.uk,Match!
+David,Vu,Deutsche Bank,david.vu@plusmarketsgroup.com,Match!
+Simon,Watts,Vodafone,simon.watts@vodafoneziggo.nl,Match!
+Calum,Watson-Bryce,JPMorgan Chase & Co.,calum.watson-bryce@jpmorganchase.com,Match!
+Noman,Ashraf,Bank of America,noman.ashraf@bankofamerica.com,Match!
+Steve,Wood,J.P. Morgan,steve.wood@jpmorgan.com,Match!
+Rajchandar,Rajendran,BP,rajchandar.rajendran@de.bp.com,Match!
+Chris,Reville,Royal Bank of Scotland,chris.reville@rbs.com,Match!
+Marc,Davison,ION,marc.davison@aion.be,Match!
+Sassan,Danesh,Etrading Software Ltd,sassan.danesh@etradingsoftware.com,Match!
+Adam,Krug,ServiceNow,adamkrug@servicenow.com,Match!
+Andrew,Grant,Deutsche Bank,andrew.grant@plusmarketsgroup.com,Match!
+Stuart,Egerton,Coventus Consulting,stuart.egerton@ovum.com,Match!
+Mark,Joslin,Lloyds Banking Group,mark.joslin@lloydsbankinggroup.com,Match!
+Megha,Trikha,TP ICAP,megha.trikha@tpicap.com,Match!
+Lenka,Molins,Deloitte,"lenka.molins@deloitte,com",Match!
+Waqar,Hussain,Deutsche Bank,waqar.hussain@plusmarketsgroup.com,Match!
+Elizaveta,Bazarova,White & Case LLP,elizaveta.bazarova@Whitecase.com,Match!
+Hassaan,Raza,S&P Global,hassaan_raza@standardandpoors.com,Match!
+Steve,Jenson,JPMorgan Chase & Co.,steve.jenson@jpmorganchase.com,Match!
+Sam,Holland,Tatton Investment Management Limited,sam.holland@patrizia.ag,Match!
+Simon,Mantell,EY,simon.mantell@uk.Ey.com,Match!
+Geoff,Eaton,psd Group,geoff.eaton@psdgroup.com,Match!
+Alex,Amey,Morgan Stanley,alex.amey@morganstanley.com,Match!
+Hanzhi,Deng,HSBC,hanzhi.deng@hsbcib.com,Match!
+Alain,Mandy,Wellington Management,alain.mandy@wellington.com,Match!
+Oliver,Beck,"Janus Henderson Investors, EMEA",oliver.beck@janushenderson.com,Match!
+Joanna,Palmer,Intermediate Capital Group (ICG),joanna.palmer@icgam.com,Match!
+Deepak,Goyal,Deutsche Bank,deepak.goyal@plusmarketsgroup.com,Match!
+Matthew,Bowen,Monex Europe,matthew.bowen@monexeurope.com,Match!
+Joanna,Palmer,Intermediate Capital Group (ICG),joanna.palmer@icgam.com,Match!
+Florence,Herard,BNY Mellon,florence.herard@bny.com,Match!
+Ramesh,Gopakumar,LSEG (London Stock Exchange Group),rameshgopakumar@londonstockexchange.com,Match!
+Nathan,Fox,Janus Henderson Investors,nathan.fox@janushenderson.com,Match!
+Biyu,Dai,Credit Suisse,biyu.dai@credit-suisse.com ,Match!
+Ryan,Edwards,Intercontinental Exchange,ryan.edwards@ice.com,Match!
+Richi,Dhillon,HSBC,richi.dhillon@hsbcib.com,Match!
+Balraj,Sharma,Shell,balraj.sharma@shell.com,Match!
+Priya,Ramaswamy,Lloyds Banking Group,priya.ramaswamy@lloydsbankinggroup.com,Match!
+Don,Murray,Barclays UK,don.murray@barclays.com ,Match!
+Jason,Lofthouse,EDF Trading,jason.lofthouse@edftrading.com,Match!
+Andrea,Ferrise,LSEG (London Stock Exchange Group),andreaferrise@londonstockexchange.com,Match!
+Shelley,Patel,UBS,shelley.patel@businesssolutions.es,Match!
+Ty,Brooks,UBS,ty.brooks@businesssolutions.es,Match!
+David,Evans,Federated Hermes Limited,david.evans@FederatedHermes.com,Match!
+David,Negus,Investec,david.negus@investec.ec,Match!
+Dhara,Vyas,Goldman Sachs,dhara.vyas@ny.email.gs.com,Match!
+Shashin,Shrivastava,Deloitte,"shashin.shrivastava@deloitte,com",Match!
+Mohi,Uddin,Coutts,mohi.uddin@coutts.com,Match!
+Richard,Hawkes,Daiwa Capital Markets Europe Ltd,richard.hawkes@uk.daiwacm.com,Match!
+Anthony,Ford,VTB Capital,anthony.ford@tibra.com,Match!
+Mehdi,Malekmohammadi,Deutsche Bank,mehdi.malekmohammadi@plusmarketsgroup.com,Match!
+Hiran,Kerai,bp,hiran.kerai@de.bp.com,Match!
+Jennifer,Ji,LSEG (London Stock Exchange Group),jenniferji@londonstockexchange.com,Match!
+James,Riordan,Standard Chartered Bank,james.riordan@sc.com,Match!
+Nadim,Fulat,Alter Domus,nadim.fulat@alterdomus.com,Match!
+Daniel,Olagunju,JPMorgan Chase & Co.,daniel.olagunju@jpmorganchase.com,Match!
+Namrata,Mukherjee,BNY Mellon,namrata.mukherjee@bny.com,Match!
+Hannah,Meakin,Norton Rose Fulbright,hannah.meakin@nortonrosefulbright.com,Match!
+Hamid,Ahmadi,BGC Partners,hamidahmadi@bgcpartners.com,Match!
+Mustafa,Topiwala,AllianceBernstein,mustafa.topiwala@abglobal.com,Match!
+James,Woodhouse,UBS,james.woodhouse@businesssolutions.es,Match!
+Kelly,Gregory,LSEG (London Stock Exchange Group),kellygregory@londonstockexchange.com,Match!
+Evangelia,Petrou,Bank of America,evangelia.petrou@bankofamerica.com,Match!
+BajiPrasad,Behera,GIB Asset Management,bajiprasad.behera@barings.com,Match!
+Barbara,Smith,Barclays,barbara.smith@barclays.com ,Match!
+Nuno,Sousa,Deutsche Bank,nuno.sousa@plusmarketsgroup.com,Match!
+Jack,Prettejohn,Allen & Overy,jack.prettejohn@AllenOvery.com,Match!
+Charlotte,Carrington,Simmons & Simmons,charlotte.carrington@Simmons-Simmons.com,Match!
+Graham,Faulkner,Morgan Stanley,graham.faulkner@morganstanley.com,Match!
+Kedar,Shukla,Mesarete Capital,kedar.shukla@smbc-cm.com,Match!
+Ian,Russell,HSBC,ian.russell@hsbcib.com,Match!
+Mujibur,Rahman,ITI Capital,mujibur.rahman@iticapital.com,Match!
+Ligia,Arias-Barrera,House of Commons,ligia.arias-barrera@parliament.uk,Match!
+Shruti,Orr,UBS,shruti.orr@businesssolutions.es,Match!
+Nicolai,Negru,BNP Paribas,nicolai.negru@uk.bnpparibas.com,Match!
+Yuhang,Wang,BMO Capital Markets,yuhang.wang@smbc-cm.com,Match!
+Andrew,Carey,Deutsche Bank,andrew.carey@plusmarketsgroup.com,Match!
+Tony,Chaplin,TP ICAP,tony.chaplin@tpicap.com,Match!
+Suraj,Singh,Morgan Stanley,suraj.singh@morganstanley.com,Match!
+Nishant,Goyal,UBS,nishant.goyal@businesssolutions.es,Match!
+Aniket,Suru,Crédit Agricole CIB,aniket.suru@credit-agricole.sa ,Match!
+Sai,Kodali,Philip Morris International,sai.kodali@pmi.com,Match!
+Ainsley,McNiff,Waystone,ainsley.mcniff@wavestone.com,Match!
+Jon-Henry,Eymond-Jones,Bank of America,jon-henry.eymond-jones@bankofamerica.com,Match!
+Tomasz,Wasilewski,TEKsystems,tomasz.wasilewski@t-systems.com,Match!
+Raheem,Rafiq,Bank of America Merrill Lynch,raheem.rafiq@baml.com,Match!
+Soo,Ming,J.P. Morgan,soo.ming@jpmorgan.com,Match!
+Premjit,Marwah,RBS International,premjit.marwah@msdinternational.com,Match!
+Angel,Larrión,Standard Chartered Bank,angel.larrión@sc.com,Match!
+Sarah,Panniker,J.P. Morgan,sarah.panniker@jpmorgan.com,Match!
+Katy,Manzolini,JPMorgan Chase & Co,katy.manzolini@jpmorganchase.com,Match!
+Gareth,Morgan,Standard Chartered Bank,gareth.morgan@sc.com,Match!
+Bradley,Fletcher,HSBC,bradley.fletcher@hsbcib.com,Match!
+Hamza,Shah,S&P Global,hamza_shah@standardandpoors.com,Match!
+Tony,Davies,BNY Mellon,tony.davies@bny.com,Match!

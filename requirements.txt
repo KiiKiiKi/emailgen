@@ -1,0 +1,7 @@
+streamlit
+requests
+gspread
+oauth2client
+unidecode
+fuzzywuzzy
+python-Levenshtein

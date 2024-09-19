@@ -1,0 +1,134 @@
+first_name,last_name,company,email,match_status,status,regexp,gibberish,disposable,webmail,mx_records,smtp_server,smtp_check,accept_all,block,score
+Alex,Rutter,Tradeweb,alex.rutter@tradeweb.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Tim,Arnold,Crédit Agricole Corporate and Investment Bank,tim.arnold@ca-cib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,71
+Darren,Lazarus,HSBC,darren.lazarus@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Jean-Philippe,Bouton,RBC Capital Markets,jean-philippe.bouton@smbc-cm.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Jennifer,Sutton,HSBC,jennifer.sutton@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+Mark,Frith,HSBC,mark.frith@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Louise,Prebble,Vanguard,louise.prebble@vanguard.co.uk,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,73
+Dzhuneyt,Yusein,J.P. Morgan,dzhuneyt.yusein@jpmorgan.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,71
+Rayhan,Oddud,J.P. Morgan,rayhan.oddud@jpmorgan.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+John,Kersten,Commerzbank AG,john.kersten@commerzbank.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+Kay,Swinburne,UK House of Lords,kayswinburne@doctors.org.uk,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,74
+Julia,Excell,ING,julia.excell@ing.lu,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Ektoras,Tsamis,Bank of China,ektoras.tsamis@bankofchina.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,71
+Peter,Fine,HSBC,peter.fine@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,73
+Aqsa,Naz,Federated Hermes Limited,aqsa.naz@FederatedHermes.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Martin,Angliss,ING,martin.angliss@ing.lu,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,74
+Jeremy,Clivaz,"Birkbeck, University of London",j.clivaz@bbk.ac.uk,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+Anna,Thompson,IHS Markit,"anna.thompson@markit.com
+",Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Richard,Holdsworth,HSBC,richard.holdsworth@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+Rashmeet,Panesar,ING,rashmeet.panesar@ing.lu,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+Melania,Wicks,HSBC,melania.wicks@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,73
+Kanika,Chopra,Man Group,kanika.chopra@man.com ,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,71
+Steve,Wood,J.P. Morgan,steve.wood@jpmorgan.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,73
+Martyn,Dwight,Transact,martyn.dwight@transatel.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,71
+Stephen,Long,JP Morgan,stephen.long@jpmorgan.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Kiran,Patel,Shell,kiran.patel@shell.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,73
+Nasir,Butt,4C Associates,nasir.butt@kbassociates.ie,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,74
+Adam,Butt,J.P. Morgan,adam.butt@jpmorgan.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,71
+Melania,Wicks,HSBC,melania.wicks@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,73
+Louis,Josiah,HSBC,louis.josiah@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Pius,Achuama,HSBC,pius.achuama@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,74
+Alexis,Delmar,HSBC,alexis.delmar@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+Nick,Day,HSBC,nick.day@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,73
+Steve,Wood,J.P. Morgan,steve.wood@jpmorgan.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,73
+Chris,Reville,Royal Bank of Scotland,chris.reville@rbs.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Marc,Davison,ION,marc.davison@aion.be,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Hanzhi,Deng,HSBC,hanzhi.deng@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,71
+Alain,Mandy,Wellington Management,alain.mandy@wellington.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,74
+Ryan,Edwards,Intercontinental Exchange,ryan.edwards@ice.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,73
+Richi,Dhillon,HSBC,richi.dhillon@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,71
+Balraj,Sharma,Shell,balraj.sharma@shell.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,71
+David,Evans,Federated Hermes Limited,david.evans@FederatedHermes.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Mohi,Uddin,Coutts,mohi.uddin@coutts.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Richard,Hawkes,Daiwa Capital Markets Europe Ltd,richard.hawkes@uk.daiwacm.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+Nadim,Fulat,Alter Domus,nadim.fulat@alterdomus.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+BajiPrasad,Behera,GIB Asset Management,bajiprasad.behera@barings.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,74
+Kedar,Shukla,Mesarete Capital,kedar.shukla@smbc-cm.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+Ian,Russell,HSBC,ian.russell@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+Mujibur,Rahman,ITI Capital,mujibur.rahman@iticapital.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,72
+Yuhang,Wang,BMO Capital Markets,yuhang.wang@smbc-cm.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,74
+Sai,Kodali,Philip Morris International,sai.kodali@pmi.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,70
+Soo,Ming,J.P. Morgan,soo.ming@jpmorgan.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,73
+Sarah,Panniker,J.P. Morgan,sarah.panniker@jpmorgan.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,74
+Bradley,Fletcher,HSBC,bradley.fletcher@hsbcib.com,Match!,accept_all,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,73
+Caitlin,McErlane,Baker McKenzie,caitlin.mcerlane@bakermckenzie.com,Match!,unknown,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,79
+Harry,Eddis,Linklaters,harry.eddis@sacglobalinvestors.com,Match!,unknown,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,60
+Greg,Norris,Credit Suisse,greg.norris@credit-suisse.com ,Match!,unknown,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,56
+Greg,Norris,Credit Suisse,greg.norris@credit-suisse.com ,Match!,unknown,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,56
+Sam,Holland,Tatton Investment Management Limited,sam.holland@patrizia.ag,Match!,unknown,,,,,,,,,,
+Fatima,Haris,BNY Mellon,fatima.haris@bny.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+Tom,Lodder,Allen & Overy,tom.lodder@AllenOvery.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,100
+John,Wilson,Standard Chartered Bank,john.wilson@sc.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+Emily,Ballisat,Simmons & Simmons,emily.ballisat@Simmons-Simmons.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,91
+George,Sotiropoulos,Bank of England,george.sotiropoulos@bankofengland.co.uk,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,92
+Fariha,Haseen,Morgan Stanley,fariha.haseen@morganstanley.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Emma,Abrahams,Barclays,emma.abrahams@barclays.com ,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,92
+Caroline,Stratton,DWS Group,caroline.stratton@dws.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Luke,Taylor,Goldman Sachs,luke.taylor@ny.email.gs.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+Katie,Carter,Jupiter Asset Management,katie.carter@jupiteram.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Sara,Centofanti,Bank of England,sara.centofanti@bankofengland.co.uk,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,91
+Alex,Lee,EY,alex.lee@uk.Ey.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Amaan-Eddin,Khan,Morgan Stanley,amaan-eddin.khan@morganstanley.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+Amy,Ramsay,Morgan Stanley,amy.ramsay@morganstanley.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,92
+Susan,Akwongo,Standard Chartered Bank,susan.akwongo@sc.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Elisa,Menardo,Credit Suisse,elisa.menardo@credit-suisse.com ,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,90
+Marius,Floca,TP ICAP,marius.floca@tpicap.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,92
+Yvonne,Harte,UK Finance,yvonne.harte@ukfinance.org.uk,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,91
+Scott,Charity,Berenberg,scott.charity@berenberg.de,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Eren,Erman,TP ICAP,eren.erman@tpicap.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Kamal,Virk,Barclays,kamal.virk@barclays.com ,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,90
+Anoop,Vayalil,BNP Paribas,anoop.vayalil@uk.bnpparibas.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Yana,Papst,Clifford Chance,yana.papst@cliffordchance.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,90
+Dineshbabu,Sekar,EY,dineshbabu.sekar@uk.Ey.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,92
+Christopher,Cooper,IG,christopher.cooper@ig.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+Jonathan,Ladds,Standard Chartered Bank,jonathan.ladds@sc.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+Marek,Juscikowski,BlackRock,marek.juscikowski@blackrock.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,92
+Himesh,Patel,BNY Mellon,himesh.patel@bny.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,90
+Rahima,Begum,Morgan Stanley,rahima.begum@morganstanley.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,92
+Lu,Fu,Mizuho,lu.fu@mizuhogroup.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,92
+Charlotte,Hopkins,Barclays,charlotte.hopkins@barclays.com ,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,91
+Joanna,Jenkins,Binance,joanna.jenkins@binance.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,91
+Chafik,Choukri,BNP Paribas,chafik.choukri@uk.bnpparibas.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+Alex,Amey,Morgan Stanley,alex.amey@morganstanley.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,92
+Sveva,Sfara,BNY Mellon,sveva.sfara@bny.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,90
+Lee,McGouran,Morgan Stanley,lee.mcgouran@morganstanley.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Lee,McGouran,Morgan Stanley,lee.mcgouran@morganstanley.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Andrei,Radu,Bank of England,andrei.radu@bankofengland.co.uk,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Sassan,Danesh,Etrading Software Ltd,sassan.danesh@etradingsoftware.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,100
+Megha,Trikha,TP ICAP,megha.trikha@tpicap.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,90
+Elizaveta,Bazarova,White & Case LLP,elizaveta.bazarova@Whitecase.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,100
+Simon,Mantell,EY,simon.mantell@uk.Ey.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,92
+Geoff,Eaton,psd Group,geoff.eaton@psdgroup.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,100
+Alex,Amey,Morgan Stanley,alex.amey@morganstanley.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,92
+Oliver,Beck,"Janus Henderson Investors, EMEA",oliver.beck@janushenderson.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,90
+Joanna,Palmer,Intermediate Capital Group (ICG),joanna.palmer@icgam.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+Joanna,Palmer,Intermediate Capital Group (ICG),joanna.palmer@icgam.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+Nathan,Fox,Janus Henderson Investors,nathan.fox@janushenderson.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,91
+Biyu,Dai,Credit Suisse,biyu.dai@credit-suisse.com ,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+Don,Murray,Barclays UK,don.murray@barclays.com ,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+James,Riordan,Standard Chartered Bank,james.riordan@sc.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,91
+Namrata,Mukherjee,BNY Mellon,namrata.mukherjee@bny.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Hannah,Meakin,Norton Rose Fulbright,hannah.meakin@nortonrosefulbright.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,100
+Mustafa,Topiwala,AllianceBernstein,mustafa.topiwala@abglobal.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,88
+Barbara,Smith,Barclays,barbara.smith@barclays.com ,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,91
+Jack,Prettejohn,Allen & Overy,jack.prettejohn@AllenOvery.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Charlotte,Carrington,Simmons & Simmons,charlotte.carrington@Simmons-Simmons.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Graham,Faulkner,Morgan Stanley,graham.faulkner@morganstanley.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Nicolai,Negru,BNP Paribas,nicolai.negru@uk.bnpparibas.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,89
+Tony,Chaplin,TP ICAP,tony.chaplin@tpicap.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,90
+Suraj,Singh,Morgan Stanley,suraj.singh@morganstanley.com,Match!,valid,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,90
+Preeti,O’Brien,Morgan Stanley,preeti.obrien@morganstanley.com,Match!,,,,,,,,,,,
+Alice,Zaremba,Deloitte,alice.zaremba@deloitte.com,Match!,,,,,,,,,,,
+Angélina,Li,State Street Global Advisors · Full-time,li_angelina@ssga.com,Match!,,,,,,,,,,,
+Trish,Cooper,Deloitte,trish.cooper@deloitte.com,Match!,,,,,,,,,,,
+Colum,Miskelly,Deloitte,colum.miskelly@deloitte.com,Match!,,,,,,,,,,,
+Rollo,Burgess,Deloitte,rollo.burgess@deloitte.com,Match!,,,,,,,,,,,
+Mustafa,Kanchwala,Deloitte,mustafa.kanchwala@deloitte.com,Match!,,,,,,,,,,,
+Inês,Martins,LSEG (London Stock Exchange Group),inêsmartins@londonstockexchange.com,Match!,,,,,,,,,,,
+Joy,Dedeku,Deloitte,joy.dedeku@deloitte.com,Match!,,,,,,,,,,,
+Lenka,Molins,Deloitte,lenka.molins@deloitte.com,Match!,,,,,,,,,,,
+Shashin,Shrivastava,Deloitte,shashin.shrivastava@deloitte.com,Match!,,,,,,,,,,,
+Angel,Larrión,Standard Chartered Bank,angel.larrión@sc.com,Match!,,,,,,,,,,,
