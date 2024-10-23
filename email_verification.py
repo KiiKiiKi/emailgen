@@ -6,12 +6,8 @@ import streamlit as st  # Pull creds from secrets, homie
 # Configuration
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 SPREADSHEET_NAME = "Contact Creation"
-GENERATED_RANGE = 'Generated!A2:J'  # Adjusted range to include all columns
-HISTORY_RANGE = 'History!A2:A'
-VALIDATION_RANGE = 'Validation!A2:L'  # Adjusted range for validation results
 HUNTER_API_KEY = st.secrets["hunter"]["api_key"]  # Pull Hunter API key from secrets
 HUNTER_URL = 'https://api.hunter.io/v2/email-verifier'
-HUNTER_ACCOUNT_URL = 'https://api.hunter.io/v2/account'
 
 # Authenticate with Google Sheets API using Streamlit Secrets for service account
 def get_gspread_client():
@@ -56,6 +52,10 @@ def run_email_verifier():
     if not emails_to_verify:
         print("No new emails to verify.")
         return "No new emails to verify."
+    else:
+        print("Emails to verify:")
+        for email_row in emails_to_verify:
+            print(email_row[2])
 
     # Verify emails using Hunter.io
     verification_results = []
@@ -63,6 +63,8 @@ def run_email_verifier():
         email = email_row[2].strip()
         response = requests.get(HUNTER_URL, params={'email': email, 'api_key': HUNTER_API_KEY})
         result = response.json()
+        print(f"Verifying email: {email}")
+        print(f"API Response: {result}")
         if response.status_code == 200 and 'data' in result:
             verification_results.append(email_row + [result['data']['status'], result['data']['score']])
             history_emails_set.add(email)
@@ -83,3 +85,8 @@ def run_email_verifier():
         generated_sheet.append_row(validation_headers[:10])  # First 10 headers
 
     return f"{len(verification_results)} emails verified successfully!"
+
+# Call the function
+result_message = run_email_verifier()
+print(result_message)
+
