@@ -19,81 +19,23 @@ def refresh_usage_values():
 # Create the Streamlit interface
 st.markdown("""
     <style>
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .full-width {
-        width: calc(100vw - 40px); /* 20px padding on each side */
-        margin-left: calc(-50vw + 20px);
-        left: 50%;
-        position: relative;
-        background-color: #E8E8E8;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    .container {
-        max-width: 1200px;
-        margin: auto;
-        padding: 20px;
-    }
-    .title {
-        font-size: 32px;
-        font-weight: bold;
-        color: #000;
-    }
-    .stats {
-        font-size: 18px;
-        color: #333;
-        text-align: right;
-    }
-    .stats .number {
-        color: #27C490;
-    }
-    .section-header {
-        font-size: 18px;
-        color: #888;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    .stButton button {
-        font-size: 18px;
-        padding: 10px 20px;
-        background-color: #2C4D5C !important;
-        color: white !important;
-        border: none;
-        border-radius: 20px;
-        margin: 10px 0;
-        transition: background-color 0.3s;
-    }
-    .stButton button:hover {
-        background-color: #27C490 !important;
-        color: white !important;
-    }
-    .link {
-        font-size: 18px;
-        color: #1e3a5f;
-        text-decoration: none;
-    }
-    .footer {
-        width: calc(100vw - 40px); /* 20px padding on each side */
-        margin-left: calc(-50vw + 20px);
-        left: 50%;
-        position: relative;
-        background-color: #E8E8E8;
-        font-size: 14px;
-        color: #888;
-        text-align: center;
-        margin-top: 20px;
-        padding: 20px;
-        box-sizing: border-box;
-    }
+    /* Your CSS styles */
     </style>
 """, unsafe_allow_html=True)
 
 # Header
 header_placeholder = st.empty()
+
+# Refresh usage values
+used_searches, used_verifications = refresh_usage_values()
+header_placeholder.markdown(f"""
+<!-- Your HTML code for displaying the stats -->
+Domain Searches Used: {used_searches}<br>
+Verifications Used: {used_verifications}
+""", unsafe_allow_html=True)
+
+# Optionally, set up auto-refresh
+st_autorefresh(interval=30000)  # Refresh every 30 seconds
 
 # Main Content
 st.markdown('<div class="container">', unsafe_allow_html=True)
@@ -129,16 +71,6 @@ st.markdown("""
     </div>
 </div>
 """, unsafe_allow_html=True)
-
-# Periodically refresh the usage values
-while True:
-    used_searches, used_verifications = refresh_usage_values()
-    header_placeholder.markdown(f"""
-    <!-- Your HTML code for displaying the stats -->
-    Domain Searches Used: {used_searches}<br>
-    Verifications Used: {used_verifications}
-    """, unsafe_allow_html=True)
-    time.sleep(30)
 
 
 
