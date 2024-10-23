@@ -21,17 +21,16 @@ def get_gspread_client():
     client = gspread.authorize(creds)
     return client
 
-# Define the run_email_verifier function
 def run_email_verifier():
     client = get_gspread_client()  # Get Google Sheets client
 
     # Open the spreadsheet by name
     spreadsheet = client.open(SPREADSHEET_NAME)
-    generated_sheet = spreadsheet.get_worksheet(1)  # "Generated" tab
-    validation_sheet = spreadsheet.get_worksheet(2)  # "Validation" tab
-    history_sheet = spreadsheet.get_worksheet(3)  # "History" tab
+    generated_sheet = spreadsheet.worksheet('Generated')  # Access by name
+    validation_sheet = spreadsheet.worksheet('Validation')
+    history_sheet = spreadsheet.worksheet('History')
 
-    # Ensure header row in the "Validation" tab
+    # Ensure header row in the "Validation" and "History" tabs
     validation_headers = ['first_name', 'last_name', 'email', 'current_company', 'current_position',
                           'about', 'skills_1', 'skills_2', 'skills_3', 'url', 'match_status', 'status', 'score']
     if not validation_sheet.row_values(1):
@@ -45,23 +44,30 @@ def run_email_verifier():
 
     # Read data from "History" tab
     history_emails = history_sheet.col_values(3)[1:]  # Skip the header row (email is in the 3rd column)
-    history_emails_set = set(history_emails)
+    history_emails_set = set(email.strip() for email in history_emails)
 
     # Filter emails to be verified, ensuring emails in the "History" tab are not verified again
-    emails_to_verify = [row for row in generated_emails if row[2] not in history_emails_set]
+    emails_to_verify = [row for row in generated_emails if row[2].strip() not in history_emails_set]
+
+    print(f"Total generated emails: {len(generated_emails)}")
+    print(f"Total emails in history: {len(history_emails_set)}")
+    print(f"Total emails to verify: {len(emails_to_verify)}")
+
+    if not emails_to_verify:
+        print("No new emails to verify.")
+        return "No new emails to verify."
 
     # Verify emails using Hunter.io
     verification_results = []
     for email_row in emails_to_verify:
-        email = email_row[2]
+        email = email_row[2].strip()
         response = requests.get(HUNTER_URL, params={'email': email, 'api_key': HUNTER_API_KEY})
         result = response.json()
-        if 'data' in result:
+        if response.status_code == 200 and 'data' in result:
             verification_results.append(email_row + [result['data']['status'], result['data']['score']])
-            # Add the email to the history set to avoid re-verification in the same run
             history_emails_set.add(email)
         else:
-            print(f"Error verifying email {email}: {result}")  # Log the error
+            print(f"Error verifying email {email}: {result.get('errors', result)}")  # Log the error
 
     # Update "Validation" tab
     if verification_results:
@@ -72,9 +78,8 @@ def run_email_verifier():
         history_sheet.append_rows(verification_results, value_input_option='RAW')
 
     # Remove checked contacts from "Generated" tab, keeping only the first row
-    generated_sheet.clear()
-    generated_sheet.append_row(validation_headers[:10])  # First 10 headers from validation_headers (no status and score)
+    if verification_results:
+        generated_sheet.clear()
+        generated_sheet.append_row(validation_headers[:10])  # First 10 headers
 
-    return f"{len(verification_results)} emails verified successfully!"  # Return a message for Streamlit
-
-
+    return f"{len(verification_results)} emails verified successfully!"
