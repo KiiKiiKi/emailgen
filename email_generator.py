@@ -134,10 +134,25 @@ def generate_email_from_pattern(first_name, last_name, pattern, domain):
 
 def find_best_match(company_name, email_structures):
     formatted_name = format_company_name(company_name)
-    matches = process.extract(formatted_name, email_structures.keys(), scorer=fuzz.token_sort_ratio)
-    if matches and matches[0][1] > 80:  # Adjusted the threshold to 80
-        return email_structures[matches[0][0]]
+    
+    # Filter out email structures with 'Unmatched' as the pattern
+    valid_email_structures = {org: val for org, val in email_structures.items() if val[0] != 'Unmatched'}
+    
+    # Find the best matches using fuzzy matching
+    matches = process.extract(formatted_name, valid_email_structures.keys(), scorer=fuzz.token_sort_ratio)
+    
+    # Check for valid matches above a certain threshold
+    if matches:
+        # Sort the matches by their similarity score in descending order
+        matches = sorted(matches, key=lambda x: x[1], reverse=True)
+        
+        # Return the first valid match (score > 80) or None if no valid match is found
+        for match in matches:
+            if match[1] > 80:
+                return email_structures.get(match[0])
+    
     return None
+
 
 
 
