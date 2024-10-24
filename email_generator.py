@@ -48,17 +48,20 @@ def run_email_generator():
                 organization = format_company_name(organization)
                 email_structures[organization] = (email_pattern, domain_name)
 
-    # Split names and generate emails
-    output_emails = []
+    # Get all contacts from the "Extract" sheet
     contacts = extract_sheet.get_all_records()
 
+    # Now we assume that the first row is always the header
     if contacts:
-        headers = contacts[0]  # Save the headers (first row)
-        contacts = contacts[1:]  # Skip only the first row (headers)
+        headers = contacts[0]  # This is the header row
+        contacts = contacts[1:]  # Process everything from row 2 onward
 
+    # Split names and generate emails
+    output_emails = []
+    
     for contact in contacts:
         try:
-            full_name = contact['Name']
+            full_name = contact.get('Name', '')
             company = contact.get('Current company', '')
 
             if not full_name or not company:  # Skip if essential data is missing
