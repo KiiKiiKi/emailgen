@@ -46,7 +46,7 @@ def run_email_verifier():
 
         # Read data from "Generated" tab
         data = generated_sheet.get_all_values()
-        if not data:
+        if not data or len(data) == 1:
             print("No data found in 'Generated' sheet.")
             return
 
@@ -66,7 +66,7 @@ def run_email_verifier():
         history_emails = [row[history_email_index].strip() for row in history_data if len(row) > history_email_index]
         history_emails_set = set(history_emails)
 
-        # Collect rows to verify
+        # Collect rows to verify, skipping emails already in history
         rows_to_verify = []
         for row in rows:
             if len(row) > email_col_index:
