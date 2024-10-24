@@ -52,11 +52,9 @@ def run_email_generator():
     output_emails = []
     contacts = extract_sheet.get_all_records()
 
-    if len(contacts) > 1:
-        headers = contacts[0]
-        contacts = contacts[1:]  # Skip the first row (headers)
-    else:
-        headers = []
+    if contacts:
+        headers = contacts[0]  # Save the headers (first row)
+        contacts = contacts[1:]  # Skip only the first row (headers)
 
     for contact in contacts:
         try:
@@ -126,7 +124,6 @@ def run_email_generator():
     extract_sheet.append_row(extract_headers)
 
     return f"{len(output_emails)} emails generated successfully!"  # Return a message for Streamlit to display
-
 
 # Helper functions (put these at the top if they are referenced elsewhere)
 def generate_email_from_pattern(first_name, last_name, pattern, domain):
