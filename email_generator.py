@@ -59,50 +59,64 @@ def run_email_generator():
         headers = []
 
     for contact in contacts:
-        full_name = contact['Name']
-        name_parts = full_name.split()
-        original_first_name = name_parts[0]
-        original_last_name = name_parts[1] if len(name_parts) > 1 else ""  # Handle single-part names
-        cleaned_first_name = clean_name(original_first_name)
-        cleaned_last_name = clean_name(original_last_name)
-        company = contact['Current company']
-        first_initial = cleaned_first_name[0] if cleaned_first_name else ""
+        try:
+            full_name = contact['Name']
+            company = contact.get('Current company', '')
 
-        result = find_best_match(company, email_structures)
+            if not full_name or not company:  # Skip if essential data is missing
+                logging.warning(f"Skipping contact with missing data: {contact}")
+                continue
 
-        if result:
-            pattern, domain = result
-            email = generate_email_from_pattern(cleaned_first_name, cleaned_last_name, pattern, domain)
-            match_status = "Match!"
-        else:
-            formatted_domain = format_company_name(company) + '.com'
-            patterns = [
-                f"{cleaned_first_name}.{cleaned_last_name}@{formatted_domain}",
-                f"{cleaned_first_name}_{cleaned_last_name}@{formatted_domain}",
-                f"{cleaned_first_name}@{formatted_domain}",
-                f"{cleaned_first_name}{cleaned_last_name}@{formatted_domain}",
-                f"{first_initial}.{cleaned_last_name}@{formatted_domain}"
-            ]
-            email = patterns[0]  # Just pick the first pattern for simplicity
-            match_status = "Unmatched :("
+            name_parts = full_name.split()
+            original_first_name = name_parts[0]
+            original_last_name = name_parts[1] if len(name_parts) > 1 else ""  # Handle single-part names
+            cleaned_first_name = clean_name(original_first_name)
+            cleaned_last_name = clean_name(original_last_name)
+            first_initial = cleaned_first_name[0] if cleaned_first_name else ""
 
-        output_emails.append({
-            'first_name': original_first_name,
-            'last_name': original_last_name,
-            'email': email,
-            'current_company': company,
-            'current_position': contact['Current position'],
-            'about': contact['About'],
-            'skills_1': contact['Skills 1'],
-            'skills_2': contact['Skills 2'],
-            'skills_3': contact['Skills 3'],
-            'url': contact['url'],
-            'match_status': match_status
-        })
+            # Find the best match
+            result = find_best_match(company, email_structures)
 
-    # Write the output to Google Sheets
+            if result:
+                pattern, domain = result
+                email = generate_email_from_pattern(cleaned_first_name, cleaned_last_name, pattern, domain)
+                match_status = "Match!"
+            else:
+                # Fallback email generation if unmatched
+                formatted_domain = format_company_name(company) + '.com'
+                patterns = [
+                    f"{cleaned_first_name}.{cleaned_last_name}@{formatted_domain}",
+                    f"{cleaned_first_name}_{cleaned_last_name}@{formatted_domain}",
+                    f"{cleaned_first_name}@{formatted_domain}",
+                    f"{cleaned_first_name}{cleaned_last_name}@{formatted_domain}",
+                    f"{first_initial}.{cleaned_last_name}@{formatted_domain}"
+                ]
+                email = patterns[0]  # Pick the first pattern as fallback
+                match_status = "Unmatched :("
+
+            # Append contact email data to output list
+            output_emails.append({
+                'first_name': original_first_name,
+                'last_name': original_last_name,
+                'email': email,
+                'current_company': company,
+                'current_position': contact.get('Current position', ''),
+                'about': contact.get('About', ''),
+                'skills_1': contact.get('Skills 1', ''),
+                'skills_2': contact.get('Skills 2', ''),
+                'skills_3': contact.get('Skills 3', ''),
+                'url': contact.get('url', ''),
+                'match_status': match_status
+            })
+
+        except Exception as e:
+            logging.error(f"Error processing contact {contact}: {e}")
+            continue
+
+    # Prepare data for Google Sheets bulk append
     output_data = [[row['first_name'], row['last_name'], row['email'], row['current_company'], row['current_position'], row['about'], row['skills_1'], row['skills_2'], row['skills_3'], row['url'], row['match_status']] for row in output_emails]
 
+    # Write all generated emails to Google Sheets at once
     if output_data:
         generated_sheet.append_rows(output_data, table_range='A2')
 
@@ -112,6 +126,7 @@ def run_email_generator():
     extract_sheet.append_row(extract_headers)
 
     return f"{len(output_emails)} emails generated successfully!"  # Return a message for Streamlit to display
+
 
 # Helper functions (put these at the top if they are referenced elsewhere)
 def generate_email_from_pattern(first_name, last_name, pattern, domain):
