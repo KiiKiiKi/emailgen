@@ -4,6 +4,10 @@ from fuzzywuzzy import fuzz, process
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import streamlit as st  # Import Streamlit for secrets
+import logging
+
+# Setup logging to capture issues
+logging.basicConfig(level=logging.INFO)
 
 # Function to clean and format company names into domains
 def format_company_name(company_name):
@@ -58,24 +62,26 @@ def run_email_generator():
 
     # Split names and generate emails
     output_emails = []
-    
-    for contact in contacts:
-        try:
-            full_name = contact.get('Name', '')
-            company = contact.get('Current company', '')
 
-            if not full_name or not company:  # Skip if essential data is missing
-                logging.warning(f"Skipping contact with missing data: {contact}")
+    for idx, contact in enumerate(contacts):
+        try:
+            full_name = contact.get('Name', '').strip()
+            company = contact.get('Current company', '').strip()
+
+            if not full_name or not company:  # Handle empty name or company gracefully
+                logging.warning(f"Row {idx + 2} skipped: Missing name or company. Name: {full_name}, Company: {company}")
                 continue
 
+            # Ensure the name is processed even if partially missing
             name_parts = full_name.split()
-            original_first_name = name_parts[0]
-            original_last_name = name_parts[1] if len(name_parts) > 1 else ""  # Handle single-part names
+            original_first_name = name_parts[0] if len(name_parts) > 0 else "unknown"
+            original_last_name = name_parts[1] if len(name_parts) > 1 else "unknown"
+
             cleaned_first_name = clean_name(original_first_name)
             cleaned_last_name = clean_name(original_last_name)
             first_initial = cleaned_first_name[0] if cleaned_first_name else ""
 
-            # Find the best match
+            # Find the best match for the company
             result = find_best_match(company, email_structures)
 
             if result:
@@ -111,7 +117,8 @@ def run_email_generator():
             })
 
         except Exception as e:
-            logging.error(f"Error processing contact {contact}: {e}")
+            # Log any errors and continue with the next contact
+            logging.error(f"Error processing row {idx + 2}: {e}")
             continue
 
     # Prepare data for Google Sheets bulk append
