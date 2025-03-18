@@ -14,6 +14,19 @@ SERVICE_ACCOUNT_INFO = st.secrets["google_sheets"]
 SPREADSHEET_NAME = "Contact Creation"
 HUNTER_URL = 'https://api.hunter.io/v2/email-verifier'
 
+def run_email_verifier():
+    # Quick API check (Hunter.io)
+    test_email = "example@example.com"
+    params = {'email': test_email, 'api_key': HUNTER_API_KEY}
+
+    try:
+        response = requests.get(HUNTER_URL, params=params)
+        if response.status_code == 200 and 'data' in response.json():
+            print("Hunter.io API connection ✅")
+        else:
+            print(f"⚠️ Hunter.io API connection issue. Status: {response.status_code}, Response: {response.text}")
+            return  # Stop if API is unreachable
+
 # Authenticate with Google Sheets API
 def get_gspread_client():
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
