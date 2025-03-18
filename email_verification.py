@@ -7,7 +7,7 @@ import json
 HUNTER_API_KEY = st.secrets["hunter"]["api_key"]
 
 # Access Google Service Account credentials
-SERVICE_ACCOUNT_INFO = st.secrets["google_service_account"]
+SERVICE_ACCOUNT_INFO = st.secrets["google_sheets"]
 
 # Configuration
 SPREADSHEET_NAME = "Contact Creation"
