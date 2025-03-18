@@ -140,6 +140,7 @@ def run_email_verifier():
     except Exception as e:
         print(f"An error occurred: {e}")
 
-if __name__ == '__main__':
+if st.button("Run Email Verifier"):
     run_email_verifier()
+
 
