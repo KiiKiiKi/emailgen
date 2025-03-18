@@ -2,6 +2,7 @@ import streamlit as st
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import json
+import requests
 
 # Access the Hunter.io API key
 HUNTER_API_KEY = st.secrets["hunter"]["api_key"]
