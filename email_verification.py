@@ -166,19 +166,18 @@ def run_email_verifier():
 
 # --- Button with stdout/stderr capture to display prints in the UI ---
 if st.button("Run Email Verifier"):
-    buf = io.StringIO()
-    err = io.StringIO()
-    with redirect_stdout(buf), redirect_stderr(err):
+    buf_out, buf_err = io.StringIO(), io.StringIO()
+    with redirect_stdout(buf_out), redirect_stderr(buf_err):
         run_email_verifier()
-    out = buf.getvalue().strip()
-    outerr = err.getvalue().strip()
+
+    out = buf_out.getvalue().strip()
+    err = buf_err.getvalue().strip()
 
     if out:
         st.subheader("Logs")
         st.code(out)
-    if outerr:
+    if err:
         st.subheader("Errors")
-        st.code(outerr)
-    if not out and not outerr:
+        st.code(err)
+    if not out and not err:
         st.info("No output captured.")
-
