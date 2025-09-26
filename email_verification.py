@@ -3,6 +3,8 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import json
 import requests
+import io
+from contextlib import redirect_stdout, redirect_stderr
 
 # Access the Hunter.io API key
 HUNTER_API_KEY = st.secrets["hunter"]["api_key"]
@@ -162,5 +164,21 @@ def run_email_verifier():
         print(f"An error occurred: {e}")
 
 
+# --- Button with stdout/stderr capture to display prints in the UI ---
 if st.button("Run Email Verifier"):
-    run_email_verifier()
+    buf = io.StringIO()
+    err = io.StringIO()
+    with redirect_stdout(buf), redirect_stderr(err):
+        run_email_verifier()
+    out = buf.getvalue().strip()
+    outerr = err.getvalue().strip()
+
+    if out:
+        st.subheader("Logs")
+        st.code(out)
+    if outerr:
+        st.subheader("Errors")
+        st.code(outerr)
+    if not out and not outerr:
+        st.info("No output captured.")
+
